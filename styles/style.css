@@ -1,4 +1,3 @@
-/* Settings for whole page */
 
 body {
     background-color: #E0E0E0;
@@ -48,10 +47,14 @@ img#secretFace {
 
 header h1.pageTitle {
     font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 header h2.websiteTitle {
     font-size: 1.15rem;
+    margin-top: .3em;
 }
 
 .menu {
@@ -60,21 +63,39 @@ header h2.websiteTitle {
     bottom: 10px;
 }
 
+.menu ul {
+    margin-bottom: 0;
+    display: flow-root;
+    list-style-type: none;
+}
+
 .menu li {
-    display: inline;
     float: left;
     background-color: #F6F7F8;
-    padding: .2em .3em;
-    border: 1px solid gray;
-    margin-left: 0;
-    margin-right: 0;
+    color: #585858;
+    font-family: 'Open Sans', 'Fira Sans', sans-serif;
+    padding: .2em .8em 0;
+    border: 1px solid #AAAAAA;
+    margin: 0;
+    font-weight: 700;
+    font-size: .9em;
+    height: 25px;
 }
 
 .menu li:first-child {
+    border-radius: 10%;
     margin-right: 5px;
 }
 
-.menu li.ellipsis {}
+.menu li:nth-child(2) {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.menu li:nth-child(4) {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
 
 .navBar {
     background-color: white;
@@ -92,10 +113,32 @@ nav.siteNav li {
     text-align: center;
     border-right: 1px solid lightgray;
     vertical-align: center;
+    font-family: 'Open Sans', 'Fira Sans', sans-serif;
+    font-weight: 400;
 }
 
-nar.siteNav li:first {
-    margin-left: 250px;
+.inner_list li {
+    background-color: white;
+    display: inline;
+    padding: .5rem 1em 0 1em;
+    text-align: center;
+    border-right: 1px solid lightgray;
+    vertical-align: center;
+    font-family: 'Open Sans', 'Fira Sans', sans-serif;
+    font-weight: 400;
+    z-index: 1;
+}
+
+nav.siteNav li:first-child, nav.siteNav li:last-child {
+    border-right: none;
+}
+
+nav.siteNav li:hover, li:active {
+    font-weight: 700;
+}
+
+nav.siteNav li:hover span {
+    border-bottom: 3px solid blue;
 }
 
 /* Settings for main portion of site, which consists of 2 columns */
@@ -160,7 +203,7 @@ address {
 .servedContent_contactHeader {
     height: 60px;
     margin-top: 10px;
-    overflow: hidden;
+    display: flow-root;
 }
 
 .smallFriendFace {
