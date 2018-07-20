@@ -162,7 +162,7 @@ nav.siteNav li:hover span {
 }
 
 .leftColumnContentBlock * {
-    padding: 5px;
+    padding: 5px 10px;
     margin: 0;
 }
 
@@ -178,17 +178,31 @@ nav.siteNav li:hover span {
 }
 
 .leftColumnContentBlock h4 {
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
     margin: .2em;
     margin-bottom: 0;
     border-bottom: 0;
-    font-weight: 800;
+    font-weight: 600;
+    /* font-weight: 700; */
+    /* font-weight: 800; */
 }
 
 .leftColumnContentBlock p {
     font-family: 'Roboto', sans-serif;
-    font-size: .8em;
-    color: blue;
+    font-size: .9em;
+    color: #4B5B9E;
     border-bottom: 1px solid #E0E0E0;
+}
+
+.anchor_p {
+    padding: .5em;
+}
+
+.leftColumn a {
+    font-family: 'Fira Sans','Roboto', sans-serif;
+    font-weight: 600;
+    padding: .9em 1em;
 }
 
 .rightColumn section.contentBlock {
@@ -232,4 +246,9 @@ address {
 
 .likeCommentOrShare p a {
     margin: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #4B5B9E;
 }
