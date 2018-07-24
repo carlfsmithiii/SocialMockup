@@ -1,6 +1,13 @@
+/* Variable declarations */
+
+:root {
+    --background-gray: #E0E0E0;
+    --social-deep-blue: #4b5b9e;
+}
+
 
 body {
-    background-color: #E0E0E0;
+    background-color: var(--background-gray);
     font-family: 'Lato', sans-serifs;
 }
 
@@ -19,13 +26,13 @@ body {
 }
 
 .banner {
-    background-color: #4b5b9e;
+    background-color: var(--social-deep-blue);
     height: 325px;
     position: relative;
 }
 
 img#secretFace {
-    background-color: #4b5b9e;
+    background-color: var(--social-deep-blue);
     border: 2px solid #3E4973;
     float: left;
     height: 150px;
@@ -169,7 +176,7 @@ nav.siteNav li:hover span {
 .leftColumnContentBlock h3 {
     height: 1.5em;
     text-transform: uppercase;
-    border-bottom: 2px solid #E0E0E0;
+    border-bottom: 2px solid var(--background-gray);
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -191,8 +198,8 @@ nav.siteNav li:hover span {
 .leftColumnContentBlock p {
     font-family: 'Roboto', sans-serif;
     font-size: .9em;
-    color: #4B5B9E;
-    border-bottom: 1px solid #E0E0E0;
+    color: var(--social-deep-blue);
+    border-bottom: 1px solid var(--background-gray);
 }
 
 .anchor_p {
@@ -224,18 +231,18 @@ address {
     float: left;
     height: 40px;
     width: 40px;
-    background-color: #4B5B9E;
+    background-color: var(--social-deep-blue);
     margin: 10px;
 }
 
 .bigBluePhoto {
-    background-color: #4B5B9E;
+    background-color: var(--social-deep-blue);
     height: 200px;
     margin: 5px;
 }
 
 .likeCommentOrShare {
-    border-top: 2px solid #E0E0E0;
+    border-top: 2px solid var(--background-gray);
 }
 
 .likeCommentOrShare p {
@@ -250,5 +257,5 @@ address {
 
 a {
     text-decoration: none;
-    color: #4B5B9E;
+    color: var(--social-deep-blue);
 }
