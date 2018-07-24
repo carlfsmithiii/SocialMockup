@@ -9,6 +9,7 @@
 body {
     background-color: var(--background-gray);
     font-family: 'Lato', sans-serifs;
+    font-weight: 300;
 }
 
 .bodyContents {
@@ -184,15 +185,18 @@ nav.siteNav li:hover span {
     background-color: #EEE;
 }
 
+.leftColumnContentBlock .emptyHeaderSpace {
+    border-bottom: 1px solid var(--background-gray);
+    height: 1.1em;
+}
+
 .leftColumnContentBlock h4 {
     color: #585858;
     font-family: 'Roboto', sans-serif;
     margin: .2em;
     margin-bottom: 0;
     border-bottom: 0;
-    font-weight: 600;
-    /* font-weight: 700; */
-    /* font-weight: 800; */
+    font-weight: 500;
 }
 
 .leftColumnContentBlock p {
@@ -242,7 +246,7 @@ address {
 }
 
 .likeCommentOrShare {
-    border-top: 2px solid var(--background-gray);
+    border-top: 1px solid var(--background-gray);
 }
 
 .likeCommentOrShare p {
@@ -257,5 +261,16 @@ address {
 
 a {
     text-decoration: none;
+    font-weight: 300;
     color: var(--social-deep-blue);
+}
+
+a.emph {
+    font-weight: 400;
+}
+
+.friends_text_post {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: .9em;
 }
